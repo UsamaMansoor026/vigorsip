@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Brygada+1918:ital,wght@0,400..700;1,400..700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Brygada 1918", serif;
+}
+
+.cartCard .cartButton {
+  margin-top: 20px;
+  transition: all 400ms ease;
+  opacity: 0;
+}
+
+.cartCard:hover .cartButton {
+  margin-top: 0;
+  opacity: 1;
+}
+
+.parallaxSection {
+  background: url("../src/assets/parallax.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+.contactSection {
+  background: url("../src/assets/gallery1.jpg");
+  background-position: center center;
+  background-size: cover;
+}
